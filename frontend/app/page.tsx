@@ -1,6 +1,7 @@
 
 "use client";
 
+import ProjectDashboard from "./components/project-dashboard";
 import Link from "next/link";
 import { FormEvent, useState } from "react";
 
@@ -262,6 +263,7 @@ export default function Home() {
           </p>
         </div>
       </section>
+      {user && <ProjectDashboard token={token} />}
     </main>
   );
 }
